@@ -1,0 +1,10 @@
+<p>Hi <%= @user.name %>,</p>
+<p>
+Welcome to the Harry Conner ! Click on the link below to activate your
+account:
+<p>Your password : <%= @user.password %></p>
+</p>
+<button class="btn btn-success">
+	Click this button for active your account
+	<%= link_to "Activate", edit_api_v1_account_activation_url(id: @user.activation_token, email: @user.email) %>
+</button>

@@ -19,6 +19,8 @@ gem 'jwt'
 gem 'roo'
 gem "roo-xls"
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'figaro'
+
 
 
 # Use Active Storage variant

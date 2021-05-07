@@ -11,6 +11,11 @@ Rails.application.routes.draw do
 			resources :topic do
 				resources :questions
 			end
+
+			namespace :admin do
+				resources :dashboards, only: %i(index)
+				resources :users
+			end
 		end
 	end
 end

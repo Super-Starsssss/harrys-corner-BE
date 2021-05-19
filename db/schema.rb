@@ -79,7 +79,7 @@ ActiveRecord::Schema.define(version: 2021_05_13_035223) do
     t.string "activation_digest"
     t.datetime "activated_at"
     t.boolean "activated"
-    t.datetime "birthday"
+    t.date "birthday"
     t.string "phone_number"
     t.string "address"
     t.integer "role_id"
